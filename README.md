@@ -51,7 +51,7 @@ in the root directory. (Running with `mocha` won't work because the tests requir
 
 The relevant user-facing class that does validation is `CodeSnippet`. Relevant methods:
 
-## Constructor(code<String>)
+## Constructor(code\<String\>)
 
 Creates a CodeSnippet.
 
