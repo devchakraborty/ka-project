@@ -1,0 +1,28 @@
+[
+	{
+		"type": "whitelist",
+		"values": ["for", "var"]
+	},
+	{
+		"type": "whitelist",
+		"values": ["while", "if"]
+	},
+	{
+		"type": "blacklist",
+		"values": ["while", "if"]
+	},
+	{
+		"type": "blacklist",
+		"values": ["for", "var"]
+	},
+	{
+		"type": "structure",
+		"structure": "{for > {if}}",
+		"label": "if statement inside for loop"
+	},
+	{
+		"type": "structure",
+		"structure": "[while > [if, if], for > [if, if]]",
+		"label": "while statement containing two if statements, followed by for statement containing two if statements"
+	}
+]
